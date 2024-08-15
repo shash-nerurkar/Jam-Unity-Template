@@ -80,11 +80,9 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private void OnPlayerLose ( Level level ) 
+    private void OnGameEnd ( Level level, bool didPlayerWin ) 
     {
         ClearLevelDataAction?.Invoke ( );
-
-        StartLevel ( level );
     }
 
     private void StartMainMenu ( float fadeInSpeedInSeconds, float fadeOutSpeedInSeconds ) 
